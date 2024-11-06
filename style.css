@@ -5,6 +5,8 @@ body {
    margin:0;
    padding:0;
    min-width: 400px;
+   background: radial-gradient( circle  at -13.6% 45%,  rgba(0,56,68,1) 5%, rgb(140, 189, 160) 51.5%, rgba(0,56,68,1) 110% );
+   
 }
 
 .header-box {
@@ -17,7 +19,6 @@ body {
 
 }
 .header {
-   background-color: #2e5848e5;
    display:flex;
    justify-content: center;
    
@@ -55,7 +56,6 @@ ul, .link {
 }
 
 .hero {
-   background-color: #2e5848e5;
    display:flex;
    justify-content: center;
    padding:70px;
@@ -95,6 +95,6 @@ button {
    border-radius: 6px;
    padding:5px 10px;
    border:none;
-   margin-bottom: 30px;
+   margin-bottom:40px;
    
 }
