@@ -67,7 +67,7 @@ ul, .link {
 
 .hero-text {
    width:350px;
-   height:200px;
+   height:220px;
 }
 
 .hero-overskrift {
@@ -91,10 +91,59 @@ img {
 }
 
 button {
-   width:100pX;
+   width:100px;
    border-radius: 6px;
    padding:5px 10px;
    border:none;
-   margin-bottom:40px;
+}
+
+.main {
+   background-color: #ffffff;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-box {
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   margin-bottom: 60px;
+}
+
+.box-text {
+   display:flex;
+   justify-content: center;
+   max-width:710px;
+   gap: 40px;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+.wrapper{
+   display:flex;
+   flex-direction: column;
+   justify-content: center; 
+   width:110px;
+   text-align: center;
    
+   }
+
+.box {
+   border: 2.5px solid;
+   height:110px;
+   width: auto;
+   border-color:rgba(0, 56, 68, 0.762);
+   border-radius: 10px;
+}
+
+h4 {
+   font-size:28px;
+   margin-bottom:40px;
+}
+
+.text {
+   margin-top:7px;
+   font-size: 11px;
 }
