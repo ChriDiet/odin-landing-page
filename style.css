@@ -4,22 +4,26 @@ body {
    font-family: "Roboto", verdana, sans-serif;
    margin:0;
    padding:0;
-   min-width: 700px;
+   min-width: 400px;
 }
 
 .header-box {
-   width: 640px;
-   flex-direction: row;
-   justify-content: space-between; 
+   flex-direction: row; 
    display: flex; 
+   max-width: 710px;
+   margin: 0px 40px 0px 40px;
+   justify-content: space-between;
+   flex:1 1 auto;
+
 }
 .header {
    background-color: #2e5848e5;
    display:flex;
    justify-content: center;
+   
 }
 
-h3 {
+.overskrift {
    font-size: 24px;
    color: #f9faf8;
 }
@@ -38,8 +42,8 @@ ul, .link {
    gap:25px;
    display:flex;
    align-items:center;
-   flex-shrink: 0;
    transition-duration: 0.3s;
+   display:flex;
    
 
 }
@@ -54,34 +58,35 @@ ul, .link {
    background-color: #2e5848e5;
    display:flex;
    justify-content: center;
-   padding:60px;
+   padding:70px;
    align-items: center;
    gap:20px;
+   flex-wrap:wrap;
+   flex:1 1px;
 }
 
 .hero-text {
-   flex-direction: column;
    width:350px;
+   height:200px;
 }
 
 .hero-overskrift {
    font-size:40px;
    color:#efeeee;
    margin:0px;
-   flex:1;
    width:330px;
 }
 
 .hero-sub-text { 
    color:#e5e7ebd8;
-   margin-top:8px;
    width:350px;
+   margin-top: 5px;
 
 }  
 
 img {
- width:270px;
- height:200;
+ width:350px;
+ height:200px;
  border-radius: 15px;
 }
 
@@ -90,4 +95,6 @@ button {
    border-radius: 6px;
    padding:5px 10px;
    border:none;
+   margin-bottom: 30px;
+   
 }
