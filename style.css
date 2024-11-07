@@ -103,7 +103,7 @@ button {
    border:none;
    font-size: 1rem;
    color: rgb(0, 38, 46);
-   box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.354);
+   box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.354);
 }
 
 .main {
@@ -215,12 +215,13 @@ justify-content: center;
    display: flex;
    flex:1;
    max-width:1000px;
-   min-width:300px;
+   min-width:350px;
    justify-content: space-evenly;
-   padding:40px 0px;
+   padding:40px 30px;
    border-radius:10px;
    align-items: center;
-   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.43);
+   box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.43);
+   gap:10px;
 }
 
 .call-text {
@@ -235,26 +236,37 @@ h6 {
    font-weight: 700;
    margin:0;
    padding:0;
+   flex:1;
 }
 
 .sign-up-text {
    color:#e5e7ebca;
    font-size: 1.1rem;
    margin:0;
+   flex:2;
 }
 
 .bottom-button:hover {
    width:130px;
-   background-color: #ffffff;
+   color: #1e332f;
    font-size: 1.2rem;
-   padding:6px 25px 6px 25px;
+   padding:6px 30px 6px 30px;
    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
 }
 
 button:hover {
    width:130px;
-   background-color: #ffffff;
    font-size: 1.2rem;
    padding:6px 25px 6px 25px;
    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
+}
+
+.footer {
+   display:flex;
+   flex:1;
+   justify-content: center;
+   align-items: center;
+   color:#e5e7eb;
+   font-size:1.1rem;
+   padding: 10px;
 }
