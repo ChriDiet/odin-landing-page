@@ -126,6 +126,8 @@ button {
    gap: 25px;
    flex-wrap: wrap;
    flex-direction: row;
+   margin-left:10px;
+   margin-right:10px;
 }
 .wrapper{
    display:flex;
@@ -133,7 +135,7 @@ button {
    justify-content: center; 
    max-width:140px;
    text-align: center;
-   flex:1 1 1;
+   flex:1 1 120px;
    
    }
 
