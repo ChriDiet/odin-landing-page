@@ -34,7 +34,7 @@ body {
 
 ul, .link {
    color:#f7f7f7;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    text-decoration: none;
    list-style: none;
    margin:0;
@@ -55,7 +55,6 @@ ul, .link {
    display:flex;
    justify-content: center;
    padding:70px;
-   align-items: center;
    gap:20px;
    flex-wrap:wrap;
 }
@@ -63,29 +62,28 @@ ul, .link {
 .hero-text {
    min-width:320px;
    max-width:500px;
-   height:240px;
    display:flex;
    flex-direction: column;
    flex:1;
+   justify-content: center;
+
 }
 
 .hero-overskrift {
    font-size:3rem;
    color:#f7f7f7;
-   margin:0px;
    max-width:450px;
    min-width:280px;
-   flex:1;
+   margin:0;
+   height: 100px;
 }
 
 .hero-sub-text { 
    color:#f7f7f7e6;
    max-width:440px;
-   margin-top: 5px;
    font-size: 1.1rem;
    min-width:300px;
-
-
+   
 }  
 
 img {
@@ -95,6 +93,7 @@ img {
    max-height:260px;
    border-radius: 15px;
    flex:1;
+   box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.354);
 }
 
 button {
@@ -102,9 +101,9 @@ button {
    border-radius: 6px;
    padding: 6px 6px;
    border:none;
-   font-size: 1.1rem;
-   margin-bottom: 0px;
+   font-size: 1rem;
    color: rgb(0, 38, 46);
+   box-shadow: 1px 1px 9px 1px rgba(0, 0, 0, 0.354);
 }
 
 .main {
@@ -148,6 +147,7 @@ button {
    max-width:150px;
    text-align: center;
    
+   
    }
 
 .box {
@@ -156,6 +156,7 @@ button {
    width: auto;
    border-color: rgba(0, 38, 46, 0.507);
    border-radius: 15px;
+   box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.354);
 }
 
 h4 {
@@ -183,7 +184,6 @@ justify-content: center;
 .quote {
    display:Flex;
    max-width:740px;
-   display: flex;
    flex-direction: column;
    color: rgb(0, 38, 46);
 }
@@ -200,4 +200,61 @@ justify-content: center;
    align-self: flex-end;
    font-size: 1.4rem;
    margin-top: 20px;
+}
+
+.before-footer {
+   display:flex;
+   background-color: #ffffff;
+   flex:1;
+   justify-content: center;
+   padding:80px 50px;
+}
+
+.call-to-action-container {
+   background-color:#487A70;
+   display: flex;
+   flex:1;
+   max-width:1000px;
+   min-width:300px;
+   justify-content: space-evenly;
+   padding:40px 0px;
+   border-radius:10px;
+   align-items: center;
+   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.43);
+}
+
+.call-text {
+   display:flex;
+   flex-direction: column;
+   gap:3px;
+}
+
+h6 {
+   color: #e5e7eb;
+   font-size: 1.4rem;
+   font-weight: 700;
+   margin:0;
+   padding:0;
+}
+
+.sign-up-text {
+   color:#e5e7ebca;
+   font-size: 1.1rem;
+   margin:0;
+}
+
+.bottom-button:hover {
+   width:130px;
+   background-color: #ffffff;
+   font-size: 1.2rem;
+   padding:6px 25px 6px 25px;
+   box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
+}
+
+button:hover {
+   width:130px;
+   background-color: #ffffff;
+   font-size: 1.2rem;
+   padding:6px 25px 6px 25px;
+   box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
 }
