@@ -4,7 +4,6 @@ body {
    font-family: "Roboto", verdana, sans-serif;
    margin:0;
    padding:0;
-   min-width: 400px;
    background: radial-gradient( circle  at -16% 45%,  rgba(0,56,68,1) 5%, rgb(125, 170, 143) 51.5%, rgba(0,56,68,1) 110% );
    
 }
@@ -25,18 +24,19 @@ body {
 }
 
 .overskrift {
-   font-size: 24px;
+   font-size: 1.6rem;
    color: #f7f7f7;
 }
 
 .meny {
    display:flex;
    flex-direction: row;
+   flex:0 1 auto;
 }
 
 ul, .link {
    color:#f7f7f7;
-   font-size: 18px;
+   font-size: 1.2rem;
    text-decoration: none;
    list-style: none;
    margin:0;
@@ -65,30 +65,34 @@ ul, .link {
 }
 
 .hero-text {
-   width:450px;
-   height:250px;
+   max-width:450px;
+   height:auto;
 }
 
 .hero-overskrift {
-   font-size:48px;
+   font-size:3rem;
    color:#f7f7f7;
    margin:0px;
-   width:450px;
+   max-width:450px;
+   min-width:250px;
 }
 
 .hero-sub-text { 
    color:#f7f7f7e6;
-   width:440px;
+   max-width:440px;
    margin-top: 5px;
-   font-size: 18px;
+   font-size: 1.1rem;
+
 
 }  
 
 img {
- width:450px;
- height:250px;
- border-radius: 15px;
- flex-shrink: 0;
+   min-width:250px;
+   max-width:450px;
+   min-height: none;
+   max-height:250px;
+   border-radius: 15px;
+   flex:1;
 }
 
 button {
@@ -96,7 +100,7 @@ button {
    border-radius: 6px;
    padding: 6px 6px;
    border:none;
-   font-size: 18px;
+   font-size: 1.1rem;
    margin-bottom: 0px;
    color: rgb(0, 38, 46);
 }
@@ -143,14 +147,14 @@ button {
 }
 
 h4 {
-   font-size:28px;
+   font-size:1.7rem;
    margin-bottom:40px;
    color: rgb(0, 38, 46);
 }
 
 .text {
    margin-top:7px;
-   font-size: 16px;
+   font-size: 1rem;
    color: rgb(0, 38, 46);
 }
 
@@ -172,7 +176,7 @@ justify-content: center;
 }
 
 .quote-text {
-   font-size: 36px;
+   font-size: 2.2rem;
    font-style:italic;
    font-weight: 100;
    display: flex;
@@ -181,6 +185,6 @@ justify-content: center;
 
 .thor {
    align-self: flex-end;
-   font-size: 22px;
-   margin-top: 10px;
+   font-size: 1.3rem;
+   margin-top: 20px;
 }
