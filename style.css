@@ -5,17 +5,16 @@ body {
    margin:0;
    padding:0;
    background: radial-gradient( circle  at -16% 45%,  rgba(0,56,68,1) 5%, rgb(125, 170, 143) 51.5%, rgba(0,56,68,1) 110% );
-   
+   box-sizing: border-box;
 }
 
 .header-box {
    flex-direction: row; 
    display: flex; 
-   max-width: 920px;
-   min-width:250px;
-   margin: 0px 40px 0px 40px;
+   max-width: 1015px;
+   margin: 0px 70px 0px 70px;
    justify-content: space-between;
-   flex:1 1 auto;
+   flex:1;
 
 }
 .header {
@@ -62,8 +61,12 @@ ul, .link {
 }
 
 .hero-text {
-   max-width:450px;
-   height:auto;
+   min-width:320px;
+   max-width:500px;
+   height:240px;
+   display:flex;
+   flex-direction: column;
+   flex:1;
 }
 
 .hero-overskrift {
@@ -71,7 +74,8 @@ ul, .link {
    color:#f7f7f7;
    margin:0px;
    max-width:450px;
-   min-width:250px;
+   min-width:280px;
+   flex:1;
 }
 
 .hero-sub-text { 
@@ -79,15 +83,16 @@ ul, .link {
    max-width:440px;
    margin-top: 5px;
    font-size: 1.1rem;
+   min-width:300px;
 
 
 }  
 
 img {
    min-width:350px;
-   max-width:450px;
-   min-height: none;
-   max-height:250px;
+   max-width:500px;
+   min-height: 150px;
+   max-height:260px;
    border-radius: 15px;
    flex:1;
 }
@@ -117,7 +122,7 @@ button {
    align-items: center;
    margin-top: 10px;
    margin-bottom: 80px;
-   max-width: 800px;
+   max-width: 770px;
 }
 
 .box-text {
@@ -147,7 +152,7 @@ button {
 
 .box {
    border: 2.5px solid;
-   height:140px;
+   height:150px;
    width: auto;
    border-color: rgba(0, 38, 46, 0.507);
    border-radius: 15px;
@@ -177,14 +182,14 @@ justify-content: center;
 
 .quote {
    display:Flex;
-   max-width:720px;
+   max-width:740px;
    display: flex;
    flex-direction: column;
    color: rgb(0, 38, 46);
 }
 
 .quote-text {
-   font-size: 2.2rem;
+   font-size: 2.3rem;
    font-style:italic;
    font-weight: 100;
    display: flex;
@@ -193,6 +198,6 @@ justify-content: center;
 
 .thor {
    align-self: flex-end;
-   font-size: 1.3rem;
+   font-size: 1.4rem;
    margin-top: 20px;
 }
