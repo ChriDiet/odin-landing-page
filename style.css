@@ -4,14 +4,14 @@ body {
    font-family: "Roboto", verdana, sans-serif;
    margin:0;
    padding:0;
-   background: radial-gradient( circle  at -16% 45%,  rgba(0,56,68,1) 5%, rgb(125, 170, 143) 51.5%, rgba(0,56,68,1) 110% );
+   background: radial-gradient( circle  at -16% 45%,  #4e4943 5%, #4e494386 51.5%, #4e4943 110% );
    box-sizing: border-box;
 }
 
 .header-box {
    flex-direction: row; 
    display: flex; 
-   max-width: 1015px;
+   max-width: 1000px;
    margin: 0px 70px 0px 70px;
    justify-content: space-between;
    flex:1;
@@ -22,23 +22,26 @@ body {
    justify-content: center; 
 }
 
-.overskrift {
-   font-size: 1.6rem;
-   color: #f7f7f7;
+#logo {
+   height:160px;
+   display:flex;
+   box-shadow: none;
+   flex:1 1 auto;
 }
 
 .meny {
    display:flex;
    flex-direction: row;
+   margin:0;
 }
 
 ul, .link {
-   color:#f7f7f7;
-   font-size: 1.1rem;
+   color:#f1ebe4;
+   font-size: 1.4rem;
    text-decoration: none;
    list-style: none;
    margin:0;
-   gap:25px;
+   gap:55px;
    display:flex;
    align-items:center;
    transition-duration: 0.3s;
@@ -54,9 +57,10 @@ ul, .link {
 .hero {
    display:flex;
    justify-content: center;
-   padding:70px;
+   padding:40px;
    gap:20px;
    flex-wrap:wrap;
+   margin-bottom:40px;
 }
 
 .hero-text {
@@ -66,37 +70,48 @@ ul, .link {
    flex-direction: column;
    flex:1;
    justify-content: center;
+   height:270px
 
 }
 
 .hero-overskrift {
    font-size:3rem;
-   color:#f7f7f7;
+   color:#f1ebe4;
    max-width:450px;
    min-width:280px;
    margin:0;
-   height: 100px;
+   height: 110px;
 }
 
 .hero-sub-text { 
-   color:#f7f7f7e6;
+   color:#f1ebe4f4;
    max-width:440px;
    font-size: 1.1rem;
    min-width:300px;
+   margin-bottom: 30px;
    
 }  
 
-img {
-   min-width:350px;
+Test{
+   width: 300px; /* Specify the width */
+   height: 200px; /* Specify the height */
+   background-image: url('default-image.jpg'); /* Initial background image */
+   background-size: cover; /* Cover the entire area of the element */
+   transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+
+.hero-img  {
+   margin-top:20px;
    max-width:500px;
-   min-height: 150px;
-   max-height:260px;
+   min-width: 320px;
    border-radius: 15px;
    flex:1;
-   box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.354);
+   box-shadow: 1px 3px 8px 6px rgba(0, 0, 0, 0.354);
 }
 
 button {
+   background-color: #f1ebe4;
    width:120px;
    border-radius: 6px;
    padding: 6px 6px;
@@ -107,7 +122,7 @@ button {
 }
 
 .main {
-   background-color: #ffffff;
+   background-color: #f1ebe4;
    display:flex;
    justify-content: center;
    align-items: center;
@@ -121,43 +136,77 @@ button {
    align-items: center;
    margin-top: 10px;
    margin-bottom: 80px;
-   max-width: 770px;
+   max-width: 1000px;
+   flex:1;
 }
 
 .box-text {
    display:flex;
    justify-content: center;
-   gap: 50px;
+   gap: 40px;
    flex-wrap: wrap;
    flex-direction: row;
-   margin-left:10px;
-   margin-right:10px;
+   flex:1;
 }
 
 .box-set {
    display:flex;
-   gap: 50px;
+   gap: 40px;
    flex-direction:row;
-   flex-shrink:1;
+   flex:1;
+   justify-content: center;
 }
 .wrapper{
    display:flex;
    flex-direction: column;
    justify-content: center; 
-   max-width:150px;
+   max-width:220px;
    text-align: center;
-   
    
    }
 
-.box {
-   border: 2.5px solid;
-   height:150px;
-   width: auto;
+.box-1,.box-2,.box-3,.box-4 {
+   height:300px;
+   width: 200px;
    border-color: rgba(0, 38, 46, 0.507);
    border-radius: 15px;
-   box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.354);
+   box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.403); 
 }
+
+.box-1{
+   background-image: url('images/bolla-normal.jpg');
+   background-size: cover;filter: 
+   grayscale(100%);
+}
+.box-1:hover{
+   background-image: url('images/bolla-grimase.jpg'); 
+   background-size: cover; 
+   filter: grayscale(100%);
+}
+
+.box-2{
+   background-image: url('images/lexi-normal.jpg');
+   background-size: cover;
+   filter: grayscale(100%);
+}
+   
+.box-2:hover{
+   background-image: url('images/lexi-grimase.jpg'); 
+   background-size: cover; 
+   filter: grayscale(100%);
+}
+
+.box-3{
+   background-image: url('images/simba-normal.jpg');
+   background-size: cover;
+   filter: grayscale(100%);
+}
+.box-3:hover{
+   background-image: url('images/simba-grimase.jpg'); 
+   background-size: cover; 
+   filter: grayscale(100%);
+}
+
 
 h4 {
    font-size:1.7rem;
@@ -172,7 +221,7 @@ h4 {
 }
 
 .quote-container {
-background: #e5e7eb;
+background: #c3beb7;
 display:flex;
 padding:80px;
 flex-direction: column;
@@ -191,9 +240,10 @@ justify-content: center;
 .quote-text {
    font-size: 2.3rem;
    font-style:italic;
-   font-weight: 100;
+   font-weight: 200;
    display: flex;
    flex-wrap:wrap;
+   color:#4e4943e7;
 }
 
 .thor {
@@ -201,18 +251,19 @@ justify-content: center;
    font-size: 1.4rem;
    margin-top: 20px;
    font-weight:700;
+   color:#4e4943e7;
 }
 
 .before-footer {
    display:flex;
-   background-color: #ffffff;
+   background-color: #f1ebe4;
    flex:1;
    justify-content: center;
    padding:90px 50px;
 }
 
 .call-to-action-container {
-   background-color:#487A70;
+   background-color:#4e4943af;
    display: flex;
    flex:1;
    max-width:1000px;
@@ -232,7 +283,7 @@ justify-content: center;
 }
 
 h6 {
-   color: #e5e7eb;
+   color: #f1ebe4;
    font-size: 1.4rem;
    font-weight: 700;
    margin:0;
@@ -248,17 +299,13 @@ h6 {
 }
 
 .bottom-button:hover {
-   width:130px;
+   scale:104%;
    color: #1e332f;
-   font-size: 1.2rem;
-   padding:6px 30px 6px 30px;
    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
 }
 
 button:hover {
-   width:130px;
-   font-size: 1.2rem;
-   padding:6px 25px 6px 25px;
+   scale:105%;
    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.354);
 }
 
@@ -267,7 +314,8 @@ button:hover {
    flex:1;
    justify-content: center;
    align-items: center;
-   color:#e5e7eb;
+   color:#4e4943da;
    font-size:1.1rem;
    padding: 10px;
+   background-color:#c3beb7;
 }
