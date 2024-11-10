@@ -46,7 +46,7 @@ body {
    display:flex;
    flex-direction: column;
    gap:40px;
-   max-width: 1100px;
+   max-width: 1200px;
    padding-left: 10px;
    padding-right: 10px;
    margin-bottom:70px;
@@ -130,6 +130,7 @@ max-width:400px;
 font-size:calc(1rem + 2.30vw);
 margin:0;
 min-width: 200px;
+font-weight: 700;
 }
 
 .light-text {
@@ -179,7 +180,7 @@ button:active {
 
 h3 {
 padding:10px;
-font-size: calc(1.5rem + 1vw);
+font-size: calc(1.2rem + 1vw);
 }
 
 .gallery-container {
@@ -301,7 +302,7 @@ box-shadow: 0px 0px 6px 2px #0000005c;
 }
 
 .booking-container {
-   max-width: 1100px;
+   max-width: 1200px;
    background-color: #6f705b;
    display:flex;
    border-radius: 15px;
